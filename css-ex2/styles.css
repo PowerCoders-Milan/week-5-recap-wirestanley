@@ -1,0 +1,48 @@
+.container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-height: 100vh;
+}
+.header {
+    background-color: darksalmon;
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    text-align: center;
+}
+.con1 {
+    background-color: darkslateblue;
+    text-align: center;
+}
+.con2 {
+    background-color: darkslategray;
+    text-align: center;
+
+}
+.con3 {
+    background-color:darkviolet ;
+    text-align: center;
+}
+.con4 {
+    background-color: forestgreen;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 3;
+    grid-row-end: span3;
+    text-align: center;
+}
+.con5 {
+    background-color: gold;
+    text-align: center;
+
+}
+.footer {
+    background-color: brown;
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    grid-row-start: 4;
+    grid-row-end: span4;
+    text-align: center;
+}
