@@ -1,0 +1,64 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    min-height: 100vh;
+    grid-template-areas:
+        "header header header"
+        "con1 con2 con3"
+        "con4 con4 con5"
+        "footer footer footer"  
+}
+.header {
+    background-color: darksalmon;
+    grid-area: header;
+    text-align: center;
+}
+.con1 {
+    background-color: darkslateblue;
+    text-align: center;
+    grid-area: con1;
+}
+.con2 {
+    background-color: darkslategray;
+    text-align: center;
+    grid-area: con2;
+
+}
+.con3 {
+    background-color:darkviolet ;
+    text-align: center;
+    grid-area: con3;
+}
+.con4 {
+    background-color: forestgreen;
+    grid-area: con4;
+    text-align: center;
+}
+.con5 {
+    background-color: gold;
+    text-align: center;
+    grid-area: con5;
+
+}
+.footer {
+    background-color: brown;
+    grid-area: footer;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "con1"
+        "con2"
+        "con3"
+        "con4"
+        "con5"
+        "footer"  
+}
+}
